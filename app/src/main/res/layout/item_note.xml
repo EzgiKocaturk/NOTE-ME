@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_6sdp"
+    android:background="@drawable/background_search"
+    android:layout_height="wrap_content"
+    android:padding="0.5dp"
+    android:id="@+id/layoutBackground">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/roundedImage"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        app:riv_corner_radius_top_left="@dimen/_6sdp"
+        app:riv_corner_radius_top_right="@dimen/_6sdp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:text="@string/title"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/harmonisans"
+        android:textSize="@dimen/_14ssp"
+        android:id="@+id/tvTitle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text"
+        android:fontFamily="@font/harmonisans"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:id="@+id/tvText"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_8sdp"
+        android:text="@string/date"
+        android:fontFamily="@font/harmonisans"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+</LinearLayout>

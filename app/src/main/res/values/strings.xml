@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Note Me!</string>
+    <string name="text">Notes</string>
+    <string name="date">Last Modified: 27 June 2020</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="title">Title</string>
+    <string name="catatanku">My Notes</string>
+    <string name="url">url</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all">ALL</string>
+    <string name="collections">TASK</string>
+    <string name="color">Color</string>
+    <string name="image">Image</string>
+    <string name="voice">Voice</string>
+    <string name="delete">Delete</string>
+    <string name="save">SAVE</string>
+    <string name="author">Dibuat Oleh Bagas Makhali</string>
+    <string name="batal">BATAL</string>
+    <string name="ok">OK</string>
+</resources>

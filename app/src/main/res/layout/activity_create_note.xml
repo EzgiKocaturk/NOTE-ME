@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.CreateNoteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addColor"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:background="@drawable/ic_color"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:backgroundTint="@android:color/darker_gray"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/color"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/harmonisans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addUrl"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:background="@drawable/ic_web_add"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:backgroundTint="@android:color/darker_gray"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/url"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/harmonisans" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addImage"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/ic_image_add"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:backgroundTint="@android:color/darker_gray"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/image"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/harmonisans" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addVoice"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:background="@drawable/ic_microphone"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:backgroundTint="@android:color/darker_gray"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voice"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/harmonisans" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addDelete"
+                android:layout_width="@dimen/_19sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:background="@drawable/ic_delete"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:backgroundTint="@android:color/darker_gray"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/harmonisans" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:onClick="onClick"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12ssp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:fontFamily="@font/harmonisans"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@null"
+        android:fontFamily="@font/harmonisans"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:hint="@string/title"
+        android:inputType="text"
+        android:textSize="@dimen/_14sdp"
+        android:autofillHints="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/colorView"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:background="@drawable/background_view" />
+
+        <EditText
+            android:id="@+id/editTextSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@null"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:hint="@string/subtitle"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/harmonisans"
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_12sdp">
+        <ImageView
+            android:id="@+id/imageNote"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/app_name"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabdeleteimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            android:tint="@android:color/white"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_12sdp">
+        <TextView
+            android:id="@+id/tvUrlNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:visibility="gone"
+            android:text="@string/url" />
+
+        <Button
+            android:id="@+id/btHapusUrl"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:background="@drawable/ic_delete"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/harmonisans"
+        android:background="@null"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:hint="@string/text"
+        android:autofillHints="" />
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:layout_gravity="end"
+        android:textSize="@dimen/_10ssp"
+        android:layout_margin="@dimen/_12sdp"
+        android:fontFamily="@font/harmonisans" />
+
+
+</LinearLayout>
